@@ -69,6 +69,16 @@ myst_heading_anchors = 6
 # Allow display (block) math with equation label syntax
 myst_dmath_allow_labels = True
 
+# Add custom url scheme
+myst_url_schemes = {
+    'http':None,
+    'https':None,
+    'mailto':None,
+    'ftp':None,
+    'slicerapidoc':'https://apidocs.slicer.org/main/{{path}}#{{fragment}}'
+    }
+
+#
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 
